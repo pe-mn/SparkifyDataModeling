@@ -18,7 +18,7 @@ song_id varchar ,
 artist_id varchar, 
 session_id int, 
 location varchar,
-user_agent varchar, 
+user_agent varchar,
 CONSTRAINT fk_start_time
     FOREIGN KEY(start_time) 
         REFERENCES time(start_time),
@@ -33,6 +33,9 @@ CONSTRAINT fk_artist_id
         REFERENCES artists(artist_id)
 )
 """)
+
+
+
 
 # user_id, first_name, last_name, gender, level
 user_table_create = ("""
